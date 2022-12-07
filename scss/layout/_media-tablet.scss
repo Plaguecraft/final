@@ -1,0 +1,80 @@
+/*mediaq*/
+@media screen and (max-width: 900px){
+    .bodyindex{
+        overflow: visible;
+    }
+    nav{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: $background-nav;
+        li{
+            display: inline-block;
+            padding: 5px 20px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                a:hover{
+                    color: $hover-nav;
+                }
+            }   
+        }
+    }
+    .logo{
+        font-family: $letra-logo;
+        color: black;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-left: 8px;
+        text-decoration: none;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 2px;
+    }
+    .contenedorserv{
+        @include grid (1fr 1fr,repeat(4,auto));
+        width: 100%;
+        margin: 25px auto;
+        align-items: center;
+        grid-template-areas:
+        "header header"
+        "card1 card2" 
+        "card3 card4"
+        "footer footer";
+    }
+    .contenedorsobremi {
+        @include grid (1fr,repeat(4,auto));
+        width: 100%;
+        margin: 25px auto;
+        grid-template-areas: 
+        "header"
+        "contsobremi" 
+        "textsobremi"
+        "footer"; 
+    }
+    .textsobremi{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .box4, .box5, .box6{
+    padding: 20px;
+    }
+    .box1, .box2, .box3, p{
+    padding: 30px;
+    text-align: center;
+    }
+    .youtube{
+        width: 400px;
+        height: 315px;
+        padding-left: 0;
+    }
+}
+

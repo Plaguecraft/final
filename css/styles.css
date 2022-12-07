@@ -1,0 +1,344 @@
+@import url(../css/fontello.css);
+/* global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*backgroundimage*/
+body {
+  background-image: url(../assets/hojitamarilla.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Mukta", sans-serif;
+  font-size: 15px;
+  background-attachment: fixed;
+  position: relative;
+  padding-bottom: 110px;
+  min-height: 100vh; }
+
+/* titulos */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: bold; }
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: bold; }
+
+/* header */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  background-color: #4ba3b388; }
+  .menu li {
+    display: inline-block;
+    padding: 5px 40px; }
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px; }
+      .menu li a a:hover {
+        color: #ece468e0; }
+
+.logo {
+  font-family: 'Island Moments', cursive;
+  color: black;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-left: 8px;
+  text-decoration: none; }
+  .logo:hover {
+    color: black; }
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1px; }
+  footer li {
+    display: inline-block;
+    padding: 5px; }
+    footer li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px; }
+      footer li a a:hover {
+        color: #bb850fea; }
+
+.copyright {
+  padding-left: 22px;
+  font-size: 15px; }
+
+.bodyindex {
+  overflow: hidden; }
+
+/*grilla index*/
+.contenedorinicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  margin: 25px auto;
+  align-items: center;
+  grid-template-areas: "header" "main" "footer"; }
+  .contenedorinicio .header {
+    grid-area: header; }
+  .contenedorinicio .main {
+    grid-area: main; }
+  .contenedorinicio .footer {
+    grid-area: footer; }
+
+/* titulo principal*/
+.main {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px auto; }
+  .main h1 {
+    font-size: 80px;
+    font-family: "Mukta", sans-serif; }
+
+.cou {
+  color: rgba(88, 146, 137, 0.9); }
+
+.ont {
+  color: rgba(202, 151, 85, 0.7); }
+
+/*foto perfil*/
+.perfil {
+  border-radius: 30%; }
+
+/*grilla sobremi*/
+.contenedorsobremi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  margin: 25px auto;
+  grid-template-areas: "header header" "contsobremi textsobremi" "footer footer"; }
+  .contenedorsobremi header {
+    grid-area: header; }
+  .contenedorsobremi hr {
+    margin: 25px 0 25px 40px;
+    border-bottom: 2px solid #4ba3b3cb;
+    border-top: 2px solid #4ba3b3cb;
+    width: 60%; }
+  .contenedorsobremi footer {
+    grid-area: footer; }
+
+.contsobremi {
+  grid-area: contsobremi;
+  text-align: center; }
+
+.textsobremi {
+  grid-area: textsobremi;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 40px; }
+
+.imgsobremi {
+  width: 80%;
+  border-radius: 25%; }
+
+/* grilla servicios*/
+.contenedorserv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  margin: 25px auto;
+  align-items: center;
+  grid-template-areas: "header header header header" "card1 card2 card3 card4" "footer footer footer footer"; }
+  .contenedorserv .card1 {
+    grid-area: card1; }
+  .contenedorserv .card2 {
+    grid-area: card2; }
+  .contenedorserv .card3 {
+    grid-area: card3; }
+  .contenedorserv .card4 {
+    grid-area: card4; }
+  .contenedorserv header {
+    grid-area: header; }
+  .contenedorserv footer {
+    grid-area: footer; }
+
+/* cajas contenedoras-servicios*/
+.cardcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+  opacity: 0.7;
+  transition: all 0.3 ease;
+  border-style: outset; }
+  .cardcont:hover {
+    opacity: 1;
+    border-style: inset; }
+
+.cardtit {
+  font-size: 30px;
+  font-family: "Mukta", sans-serif; }
+
+.cardtext {
+  font-size: 25px;
+  text-align: center; }
+
+#icon1 {
+  font-size: 100px; }
+
+#icon2 {
+  font-size: 100px; }
+
+/*blog*/
+.contenedorblog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 1px 1px;
+  grid-template-areas: "header header" "box1 box4" "box2 box5" "box3 box6" "footer footer"; }
+  .contenedorblog .box1 {
+    grid-area: box1; }
+  .contenedorblog .box2 {
+    grid-area: box2; }
+  .contenedorblog .box3 {
+    grid-area: box3; }
+  .contenedorblog .box4 {
+    grid-area: box4; }
+  .contenedorblog .box5 {
+    grid-area: box5; }
+  .contenedorblog .box6 {
+    grid-area: box6; }
+  .contenedorblog header {
+    grid-area: header; }
+  .contenedorblog footer {
+    grid-area: footer; }
+
+.box1, .box2, .box3 {
+  padding-left: 20px; }
+  .box1 p, .box2 p, .box3 p {
+    text-align: center; }
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center; }
+
+.textblog {
+  padding-top: 15px; }
+
+.youtube {
+  width: 1000px;
+  height: 600px; }
+
+/*mediaq*/
+@media screen and (max-width: 900px) {
+  .bodyindex {
+    overflow: visible; }
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #4ba3b388; }
+    nav li {
+      display: inline-block;
+      padding: 5px 20px; }
+      nav li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px; }
+        nav li a a:hover {
+          color: #ece468e0; }
+  .logo {
+    font-family: "Island Moments", cursive;
+    color: black;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 8px;
+    text-decoration: none; }
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2px; }
+  .contenedorserv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    margin: 25px auto;
+    align-items: center;
+    grid-template-areas: "header header" "card1 card2"  "card3 card4" "footer footer"; }
+  .contenedorsobremi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    margin: 25px auto;
+    grid-template-areas: "header" "contsobremi"  "textsobremi" "footer"; }
+  .textsobremi {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .box4, .box5, .box6 {
+    padding: 20px; }
+  .box1, .box2, .box3, p {
+    padding: 30px;
+    text-align: center; }
+  .youtube {
+    width: 400px;
+    height: 315px;
+    padding-left: 0; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorserv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    width: 100%;
+    margin: 25px auto;
+    align-items: center;
+    grid-template-areas: "header" "card1" "card2" "card3"  "card4" "footer"; }
+    .contenedorserv nav ul li {
+      padding: 5px 15px; }
+      .contenedorserv nav ul li a {
+        font-size: 14px; }
+  .main h1 {
+    padding: 5px 15px; }
+  #cardphone {
+    display: flex;
+    flex-direction: column-reverse; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  .contenedorblog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    width: 100%;
+    margin: 25px auto;
+    gap: 1px 1px;
+    grid-template-areas: "header" "box1" "box2" "box3" "box4" "box5" "box6" "footer"; }
+  .youtube {
+    width: 380px;
+    height: 315px; }
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .bodyindex {
+    overflow: visible; } }

@@ -1,0 +1,468 @@
+@import url(./fontello.css);
+/* global */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*backgroundimage*/
+body {
+    background-image:url(../assets/hojitamarilla.jpg);
+   
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+    background-attachment: fixed; 
+    position: relative;
+    padding-bottom: 110px;
+    min-height: 100vh;  
+}
+.bodyindex{
+   overflow: hidden;
+}
+/*grilla inicio*/
+.contenedorinicio{
+   display: grid;
+   width: 100%;
+   margin: 25px auto;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto auto;
+   align-items: center;
+   grid-template-areas:
+   "header"
+   "main"
+   "footer";
+}
+.header{
+   grid-area: header;
+}
+.main{
+   grid-area: main;
+}
+
+
+.footer{
+   grid-area: footer;
+}/*
+/* titulos 
+h1 {
+   font-family: 'Poppins', sans-serif;
+   font-style: bold;
+}
+h2 {
+   font-family: 'Poppins', sans-serif;
+   font-style: bold;
+}*/
+
+/* nav */
+/*nav {
+   display: flex;
+   justify-content: space-between;
+   
+   margin:  20px auto;  
+  }
+/*.logo {
+      font-family: 'Island Moments', cursive;
+      color: black;
+      font-size: 30px;
+      padding-top: 5px;
+      padding-left: 8px;
+      text-decoration: none;
+   }
+   .logo:hover{
+      color: black;
+   }
+  /* nav ul li {
+      display: inline-block;
+      padding: 5px 40px;
+   }
+   nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+   }
+   nav ul li a:hover {
+      color: #ece468e0;
+   }
+    .menu {
+     background-color: #4ba3b388;
+   } */
+   /* titulo principal*/
+  .main{
+   text-align: center;
+  margin: 20px auto;
+  padding: 20px auto;
+  }
+  .main h1{
+   font-size: 80px;
+   font-family:'Courier New', Courier, monospace
+  }
+  .cou{
+   color: rgba(88, 146, 137, 0.9);
+  }
+  .ont{
+   color: rgba(202, 151, 85, 0.7);
+  } 
+  /*foto perfil*/
+  .perfil{
+   border-radius: 30%;
+  } 
+  /*footer*/
+  /* footer {
+      display: flex;
+      justify-content: space-between;
+     position: absolute;
+      bottom: 0;
+      
+      width: 100%;
+      
+      padding: 1px;
+   }
+   footer ul li {
+      display: inline-block;
+      padding: 5px;
+   } 
+   footer ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+   }
+   footer ul li a:hover {
+      color: #bb850fea;
+   }*/
+  /* .copyright{
+      padding-left: 22px;
+      
+      font-size: 15px;
+   }*/
+   
+
+/* grilla servicios*/
+   .contenedorserv{
+      display: grid;
+      width: 100%;
+      margin: 25px auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      align-items: center;
+      grid-template-areas:
+      "header header header header"
+      "card1 card2 card3 card4"
+      "footer footer footer footer";
+   }
+   .card1{
+      grid-area: card1;
+     }
+   .card2{
+      grid-area: card2;
+   }
+   .card3{
+      grid-area: card3;
+      }
+   .card4{
+      grid-area: card4;
+     }
+   /* cajas contenedoras-servicios*/
+   .cardcont{  
+     height: 800px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     opacity: 0.7;
+     transition: all 0.3 ease;
+     border-style: outset ;
+     }
+   .cardcont:hover{
+      opacity: 1;
+      border-style: inset;
+   }
+   .cardtit{
+   font-size: 30px;
+   font-family:'Courier New', Courier, monospace
+   }  
+   /* boton version vikinga */ 
+   /*.cardcont a{
+   height: 40px;
+   width: 90px;
+   font-weight: 700;
+   background-color: #F9ED69;
+   border-radius: 10px;
+   padding: 7px;
+   text-decoration: none;
+   color: black; 
+   }   
+   .cardcont a:hover{
+   background-color: transparent;
+   border: 2px solid #F9ED69;
+   }*/
+   .cardtext{
+   font-size: 25px;
+   text-align: center;
+   }    
+   #icon1{
+      font-size: 100px;
+   }
+   #icon2{
+      font-size: 100px;
+   }
+/*       sobremi         */
+   .contenedorsobremi {
+      width: 100%;
+      margin: 25px auto;
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: repeat(3, auto); 
+      grid-template-areas: 
+        "header header"
+        "contsobremi textsobremi"
+        "footer footer"; 
+   }
+    .contsobremi { grid-area: contsobremi;
+      text-align: center;
+
+     
+   }
+    .textsobremi { grid-area: textsobremi;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 40px;
+   }
+   .imgsobremi{
+      width: 80%;
+      border-radius: 25%;
+   }
+   hr{
+   margin: 25px 0 25px 40px;
+   border-bottom: 2px solid #4ba3b3cb;
+   border-top: 2px solid #4ba3b3cb;
+   width: 60%;
+   }
+/*             blog           */
+   .contenedorblog {
+   
+   display: grid; 
+   grid-template-columns: 2fr 1fr; 
+   grid-template-rows: repeat(5, auto); 
+   gap: 1px 1px; 
+   grid-template-areas: 
+        "header header"
+        "box1 box4"
+        "box2 box5"
+        "box3 box6"
+        "footer footer"; 
+   }
+   
+   .box1 { grid-area: box1; }
+   .box2 { grid-area: box2; }
+   .box3 { grid-area: box3; }
+   .box4 { grid-area: box4; }
+   .box5 { grid-area: box5;}
+   .box6 {grid-area: box6;}
+   
+
+   .box1, .box2, .box3{
+   padding-left: 20px;
+   }
+   .box1, .box2, .box3, p{
+      text-align: center;
+   }
+   .box1, .box2, .box3, .box4, .box5, .box6{
+      display: flex;
+     flex-direction: column;
+      align-items: center;
+      place-content: center;
+   }
+ 
+   .textblog{
+      padding-top: 15px;
+   }
+   .youtube{
+      width: 1200px;
+      height: 315px;
+      
+   }
+
+
+
+      
+      
+   
+  
+    
+    
+
+ /*             mediaq             */   
+     @media screen and (max-width: 900px){
+    
+     .bodyindex{
+      overflow: visible;
+     }
+      nav {
+      
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+   }
+ .logo {
+       font-family: 'Island Moments', cursive;
+       color: black;
+       font-size: 30px;
+       padding-top: 5px;
+       padding-left: 8px;
+       text-decoration: none;
+    }
+    nav ul li {
+       display: inline-block;
+       padding: 5px 20px;
+    }
+    nav ul li a {
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 18px;
+    }
+    nav ul li a:hover {
+       color: #ece468e0;
+    }
+     .menu {
+      background-color: #4ba3b388;
+    }
+    footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 2px;
+   }
+      
+      
+      
+  
+    .contenedorserv{
+      display: grid;
+      width: 100%;
+      margin: 25px auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      align-items: center;
+      grid-template-areas:
+      "header header"
+      "card1 card2" 
+      "card3 card4"
+      "footer footer";
+   }
+   .contenedorsobremi {
+      width: 100%;
+      margin: 25px auto;
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(4, auto); 
+      grid-template-areas: 
+        "header"
+        "contsobremi" 
+        "textsobremi"
+        "footer"; 
+    }
+    .textsobremi{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .box4, .box5, .box6{
+   padding: 20px;
+   }
+ .box1, .box2, .box3, p{
+   padding: 30px;
+   text-align: center;
+ }
+
+       .youtube{
+         width: 400px;
+         height: 315px;
+         padding-left: 0;
+      }
+   
+ }
+ @media screen and (max-width: 600px){
+   .contenedorserv{
+      display: grid;
+      width: 100%;
+      margin: 25px auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+      align-items: center;
+      grid-template-areas:
+      "header"
+      "card1"
+      "card2"
+      "card3" 
+      "card4"
+      "footer";
+   }
+   nav ul li a{
+      font-size: 14px;
+   }
+   .main h1{
+      font-size: 60px;}
+   
+     #cardphone{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   nav ul li{
+      padding: 5px 15px;
+   }
+   footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+     position: absolute;
+      bottom: 0;
+      width: 100%;
+   }
+   .contenedorblog {
+      width: 100%;
+      margin: 25px auto;
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(8, auto); 
+      gap: 1px 1px; 
+      grid-template-areas: 
+      "header"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "footer"; 
+               
+    }
+    .youtube{
+      width: 380px;
+      height: 315px;
+   }
+   .box1, .box2, .box3, .box4, .box5, .box6{
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   .bodyindex{
+      overflow: visible;
+   }
+  
+ 
+   }
+ 
+      
+      
+     
+        
+     
+   

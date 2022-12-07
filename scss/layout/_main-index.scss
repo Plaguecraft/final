@@ -1,0 +1,44 @@
+.bodyindex{
+    overflow: hidden;
+}
+/*grilla index*/
+.contenedorinicio{
+    @include grid (1fr, repeat(3, auto));
+    width: 100%;
+    margin: 25px auto;
+    align-items: center;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}
+/* titulo principal*/
+.main{
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px auto;
+    h1{
+        font-size: 80px;
+        font-family: $letra-base;
+    }
+}
+.cou{
+    color: $color1;
+}
+.ont{
+    color: $color2;
+}
+/*foto perfil*/
+.perfil{
+    border-radius: 30%;
+} 
+

@@ -1,0 +1,56 @@
+/* grilla servicios*/
+.contenedorserv{
+    @include grid (repeat(4, 1fr),repeat(3, auto));
+    width: 100%;
+    margin: 25px auto;
+    align-items: center;
+    grid-template-areas:
+    "header header header header"
+    "card1 card2 card3 card4"
+    "footer footer footer footer";
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+/* cajas contenedoras-servicios*/
+.cardcont{
+    @include prop-flex (column,space-around,center);  
+    height: 800px;
+    opacity: 0.7;
+    transition: all 0.3 ease;
+    border-style: outset;
+    &:hover{
+        opacity: 1;
+        border-style: inset;
+    }
+}
+.cardtit{
+    font-size: 30px;
+    font-family: $letra-base;
+}
+.cardtext{
+    font-size: 25px;
+    text-align: center;
+}
+#icon1{
+    font-size: 100px;
+}
+#icon2{
+    font-size: 100px;
+}
+

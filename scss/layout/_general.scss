@@ -1,0 +1,29 @@
+/* global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*backgroundimage*/
+body {
+    background-image:url(../assets/hojitamarilla.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $letra-base;
+    font-size: 15px;
+    background-attachment: fixed; 
+    position: relative;
+    padding-bottom: 110px;
+    min-height: 100vh;  
+}
+
+/* titulos */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}

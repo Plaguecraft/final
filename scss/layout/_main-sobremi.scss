@@ -1,0 +1,37 @@
+/*grilla sobremi*/
+.contenedorsobremi{
+    @include grid (1fr 1fr,auto auto auto);
+    width: 100%;
+    margin: 25px auto;
+    grid-template-areas: 
+    "header header"
+    "contsobremi textsobremi"
+    "footer footer";
+    header{
+        grid-area:header;
+    }
+    hr{
+        margin: 25px 0 25px 40px;
+        border-bottom: 2px solid $color-hr;
+        border-top: 2px solid $color-hr;
+        width: 60%;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+.contsobremi{
+    grid-area: contsobremi;
+    text-align: center;
+}
+.textsobremi{
+    grid-area: textsobremi;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.imgsobremi{
+    width: 80%;
+    border-radius: 25%;
+}

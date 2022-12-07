@@ -1,0 +1,67 @@
+@media screen and (max-width: 600px){
+    .contenedorserv{
+    @include grid (1fr, repeat(6, auto));
+    width: 100%;
+    margin: 25px auto;
+    align-items: center;
+    grid-template-areas:
+    "header"
+    "card1"
+    "card2"
+    "card3" 
+    "card4"
+    "footer";
+    nav ul li{
+        padding: 5px 15px;
+        a{
+            font-size: 14px;
+        }
+    }
+}
+    
+.main h1{
+    padding: 5px 15px;
+}
+#cardphone{
+    display: flex;
+    flex-direction: column-reverse;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedorblog {
+    @include grid (1fr, repeat(8,auto));
+    width: 100%;
+    margin: 25px auto;
+    gap: 1px 1px; 
+    grid-template-areas: 
+    "header"
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "footer"; 
+}
+.youtube{
+    width: 380px;
+    height: 315px;
+}
+.box1, .box2, .box3, .box4, .box5, .box6{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bodyindex{
+    overflow: visible;
+}
+}    
+
+
+
+
