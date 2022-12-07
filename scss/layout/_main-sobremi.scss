@@ -3,6 +3,7 @@
     @include grid (1fr 1fr,auto auto auto);
     width: 100%;
     margin: 25px auto;
+    align-items: center;
     grid-template-areas: 
     "header header"
     "contsobremi textsobremi"
@@ -26,10 +27,8 @@
 }
 .textsobremi{
     grid-area: textsobremi;
-    text-align: center;
     padding-left: 20px;
     padding-right: 40px;
-    padding-top: 40px;
 }
 .imgsobremi{
     width: 80%;
