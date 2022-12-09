@@ -28,30 +28,22 @@ h2 {
   font-style: bold; }
 
 /* header */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-  background-color: #4ba3b388; }
-  .menu li {
-    display: inline-block;
-    padding: 5px 40px; }
-    .menu li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 20px; }
-      .menu li a a:hover {
-        color: #ece468e0; }
+.navbar {
+  background-color: #4ba3b388;
+  font-weight: bold;
+  font-size: 20px; }
 
-.logo {
+.navbar ul li a:hover {
+  color: #ece468e0 !important; }
+
+.navbar-brand {
   font-family: 'Island Moments', cursive;
   color: black;
   font-size: 30px;
   padding-top: 5px;
   padding-left: 8px;
   text-decoration: none; }
-  .logo:hover {
+  .navbar-brand:hover {
     color: black; }
 
 /*footer*/
@@ -76,43 +68,33 @@ footer {
   padding-left: 22px;
   font-size: 15px; }
 
-.bodyindex {
-  overflow: hidden; }
-
-/*grilla index*/
-.contenedorinicio {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  width: 100%;
-  margin: 25px auto;
-  align-items: center;
-  grid-template-areas: "header" "main" "footer"; }
-  .contenedorinicio .header {
-    grid-area: header; }
-  .contenedorinicio .main {
-    grid-area: main; }
-  .contenedorinicio .footer {
-    grid-area: footer; }
-
 /* titulo principal*/
-.main {
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px auto; }
-  .main h1 {
-    font-size: 80px;
-    font-family: "Mukta", sans-serif; }
+.maintitle {
+  color: #4ba3b388;
+  font-weight: bold;
+  margin: auto;
+  font-size: 70px;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 20ch;
+  animation: typing 5s steps(20);
+  overflow: hidden;
+  animation-iteration-count: infinite; }
 
-.cou {
-  color: rgba(88, 146, 137, 0.9); }
-
-.ont {
-  color: rgba(202, 151, 85, 0.7); }
+@keyframes typing {
+  from {
+    width: 0; } }
 
 /*foto perfil*/
 .perfil {
-  border-radius: 30%; }
+  border-radius: 30%;
+  margin-bottom: 50px;
+  width: 350px; }
+
+.main {
+  text-align: center; }
 
 /*grilla sobremi*/
 .contenedorsobremi {
@@ -140,11 +122,15 @@ footer {
 .textsobremi {
   grid-area: textsobremi;
   padding-left: 20px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  text-align: center;
+  font-size: 20px;
+  margin: 40px auto; }
 
 .imgsobremi {
   width: 80%;
-  border-radius: 25%; }
+  border-radius: 25%;
+  margin: 20px; }
 
 /* grilla servicios*/
 .contenedorserv {
@@ -201,6 +187,8 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(5, auto);
+  width: 100%;
+  margin: 25px auto;
   gap: 1px 1px;
   grid-template-areas: "header header" "box1 box4" "box2 box5" "box3 box6" "footer footer"; }
   .contenedorblog .box1 {
@@ -221,9 +209,9 @@ footer {
     grid-area: footer; }
 
 .box1, .box2, .box3 {
-  padding-left: 20px; }
-  .box1 p, .box2 p, .box3 p {
-    text-align: center; }
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
   display: flex;
@@ -231,32 +219,16 @@ footer {
   align-items: center;
   place-content: center; }
 
-.textblog {
-  padding-top: 15px; }
-
 .youtube {
-  width: 1000px;
-  height: 600px; }
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border: 0; }
 
 /*mediaq*/
-@media screen and (max-width: 900px) {
-  .bodyindex {
-    overflow: visible; }
-  nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #4ba3b388; }
-    nav li {
-      display: inline-block;
-      padding: 5px 20px; }
-      nav li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px; }
-        nav li a a:hover {
-          color: #ece468e0; }
+@media screen and (max-width: 991px) {
   .logo {
     font-family: "Island Moments", cursive;
     color: black;
@@ -291,16 +263,11 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px; }
   .box4, .box5, .box6 {
-    padding: 20px; }
-  .box1, .box2, .box3, p {
-    padding: 30px;
-    text-align: center; }
-  .youtube {
-    width: 400px;
-    height: 315px;
-    padding-left: 0; } }
+    padding: 8px; }
+  .maintitle {
+    font-size: 60px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 858px) {
   .contenedorserv {
     display: grid;
     grid-template-columns: 1fr;
@@ -309,12 +276,13 @@ footer {
     margin: 25px auto;
     align-items: center;
     grid-template-areas: "header" "card1" "card2" "card3"  "card4" "footer"; }
-    .contenedorserv nav ul li {
-      padding: 5px 15px; }
-      .contenedorserv nav ul li a {
-        font-size: 14px; }
-  .main h1 {
-    padding: 5px 15px; }
+  .navbar {
+    margin-bottom: 15px; }
+  .maintitle {
+    font-size: 30px; }
+  .perfil {
+    width: 250px;
+    margin: 50px; }
   #cardphone {
     display: flex;
     flex-direction: column-reverse; }
@@ -333,11 +301,15 @@ footer {
     margin: 25px auto;
     gap: 1px 1px;
     grid-template-areas: "header" "box1" "box2" "box3" "box4" "box5" "box6" "footer"; }
-  .youtube {
-    width: 380px;
-    height: 315px; }
   .box1, .box2, .box3, .box4, .box5, .box6 {
     padding-left: 10px;
     padding-right: 10px; }
-  .bodyindex {
-    overflow: visible; } }
+  .box1, .box2, .box3 {
+    overflow: hidden;
+    padding-top: 56.25%; }
+  .youtube {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 0; } }

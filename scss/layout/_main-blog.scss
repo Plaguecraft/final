@@ -1,6 +1,8 @@
 /*blog*/
 .contenedorblog{
     @include grid (2fr 1fr, repeat(5, auto));
+    width: 100%;
+    margin: 25px auto;
     gap: 1px 1px;
     grid-template-areas: 
     "header header"
@@ -22,10 +24,9 @@
     }
 }
 .box1, .box2, .box3{
-    padding-left: 20px;
-    p{
-        text-align: center;
-    }
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 .box1, .box2, .box3, .box4, .box5, .box6{
     display: flex;
@@ -33,11 +34,11 @@
     align-items: center;
     place-content: center;
 }
-.textblog{
-    padding-top: 15px;
-}
 .youtube{
-    width: 1000px;
-    height: 600px;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 0;
 }
-

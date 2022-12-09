@@ -1,27 +1,5 @@
 /*mediaq*/
-@media screen and (max-width: 900px){
-    .bodyindex{
-        overflow: visible;
-    }
-    nav{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        background-color: $background-nav;
-        li{
-            display: inline-block;
-            padding: 5px 20px;
-            a{
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 18px;
-                a:hover{
-                    color: $hover-nav;
-                }
-            }   
-        }
-    }
+@media screen and (max-width: 991px){
     .logo{
         font-family: $letra-logo;
         color: black;
@@ -65,16 +43,10 @@
         padding-bottom: 20px;
     }
     .box4, .box5, .box6{
-    padding: 20px;
+        padding: 8px;
     }
-    .box1, .box2, .box3, p{
-    padding: 30px;
-    text-align: center;
-    }
-    .youtube{
-        width: 400px;
-        height: 315px;
-        padding-left: 0;
+    .maintitle{
+        font-size: 60px;
     }
 }
 

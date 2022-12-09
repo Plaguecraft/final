@@ -1,44 +1,30 @@
-.bodyindex{
-    overflow: hidden;
-}
-/*grilla index*/
-.contenedorinicio{
-    @include grid (1fr, repeat(3, auto));
-    width: 100%;
-    margin: 25px auto;
-    align-items: center;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    .header{
-        grid-area: header;
-    }
-    .main{
-        grid-area: main;
-    }
-    .footer{
-        grid-area: footer;
-    }
-}
 /* titulo principal*/
-.main{
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px auto;
-    h1{
-        font-size: 80px;
-        font-family: $letra-base;
+.maintitle{
+    color: $background-nav;
+    font-weight: bold;
+    margin: auto;
+    font-size: 70px;
+    display: block;
+    font-family: $letra-cont;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+    animation: typing 5s steps(20);
+    overflow: hidden;
+    animation-iteration-count: infinite;
     }
+    
+@keyframes typing {
+    from {width: 0}
 }
-.cou{
-    color: $color1;
-}
-.ont{
-    color: $color2;
-}
+
 /*foto perfil*/
 .perfil{
     border-radius: 30%;
+    margin-bottom: 50px;
+    width: 350px;
 } 
+.main{
+    text-align: center;
+}
 

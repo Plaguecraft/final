@@ -1,24 +1,15 @@
 /* header */
-.menu {
-    display: flex;
-    justify-content: space-between;
-    margin:  20px auto;
+.navbar{
     background-color: $background-nav;
-        li{
-            display: inline-block;
-            padding: 5px 40px;
-            a{
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 20px;
-                a:hover{
-                    color: $hover-nav;
-                }
-            }
-        } 
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar ul li a{
+    &:hover{
+        color: $hover-nav !important;
     }
-.logo{
+}
+.navbar-brand{
     font-family: 'Island Moments', cursive;
     color: black;
     font-size: 30px;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 858px){
     .contenedorserv{
     @include grid (1fr, repeat(6, auto));
     width: 100%;
@@ -11,16 +11,16 @@
     "card3" 
     "card4"
     "footer";
-    nav ul li{
-        padding: 5px 15px;
-        a{
-            font-size: 14px;
-        }
-    }
 }
-    
-.main h1{
-    padding: 5px 15px;
+.navbar{
+    margin-bottom: 15px;
+}
+.maintitle{
+    font-size: 30px;
+}
+.perfil{
+    width: 250px;
+    margin: 50px;
 }
 #cardphone{
     display: flex;
@@ -49,16 +49,21 @@ footer {
     "box6"
     "footer"; 
 }
-.youtube{
-    width: 380px;
-    height: 315px;
-}
+
 .box1, .box2, .box3, .box4, .box5, .box6{
     padding-left: 10px;
     padding-right: 10px;
 }
-.bodyindex{
-    overflow: visible;
+.box1, .box2, .box3{
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.youtube{
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 0;
 }
 }    
 
