@@ -229,6 +229,15 @@ footer {
 
 /*mediaq*/
 @media screen and (max-width: 991px) {
+  .navbar {
+    margin-bottom: 15px;
+    position: absolute;
+    z-index: 1;
+    width: 100%; }
+  .maintitle {
+    font-size: 60px; }
+  .card1, .card2 {
+    margin-top: 86px; }
   .logo {
     font-family: "Island Moments", cursive;
     color: black;
@@ -259,13 +268,19 @@ footer {
     width: 100%;
     margin: 25px auto;
     grid-template-areas: "header" "contsobremi"  "textsobremi" "footer"; }
+  .perfil {
+    margin-top: 86px; }
   .textsobremi {
     padding-top: 20px;
     padding-bottom: 20px; }
+  .imgsobremi {
+    margin-top: 86px; }
   .box4, .box5, .box6 {
     padding: 8px; }
-  .maintitle {
-    font-size: 60px; } }
+  .box1, .box4 {
+    margin-top: 86px; }
+  #formulario {
+    margin-top: 140px; } }
 
 @media screen and (max-width: 858px) {
   .contenedorserv {
@@ -276,13 +291,18 @@ footer {
     margin: 25px auto;
     align-items: center;
     grid-template-areas: "header" "card1" "card2" "card3"  "card4" "footer"; }
+  .card1 {
+    margin-top: 86px; }
   .navbar {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: absolute;
+    z-index: 1;
+    width: 100%; }
   .maintitle {
     font-size: 30px; }
   .perfil {
     width: 250px;
-    margin: 50px; }
+    margin-top: 140px; }
   #cardphone {
     display: flex;
     flex-direction: column-reverse; }
@@ -307,9 +327,13 @@ footer {
   .box1, .box2, .box3 {
     overflow: hidden;
     padding-top: 56.25%; }
+  .box4 {
+    margin-top: 0px; }
   .youtube {
     top: 0;
     left: 10%;
     width: 80%;
     height: 80%;
-    border: 0; } }
+    border: 0; }
+  #formulario {
+    margin-top: 120px; } }

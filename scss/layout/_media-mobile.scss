@@ -12,15 +12,21 @@
     "card4"
     "footer";
 }
+.card1{
+    margin-top: 86px;
+}
 .navbar{
     margin-bottom: 15px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
 .maintitle{
     font-size: 30px;
 }
 .perfil{
     width: 250px;
-    margin: 50px;
+    margin-top: 140px;
 }
 #cardphone{
     display: flex;
@@ -58,12 +64,18 @@ footer {
     overflow: hidden;
     padding-top: 56.25%;
 }
+.box4{
+    margin-top: 0px;
+}
 .youtube{
     top: 0;
     left: 10%;
     width: 80%;
     height: 80%;
     border: 0;
+}
+#formulario{
+    margin-top: 120px;
 }
 }    
 

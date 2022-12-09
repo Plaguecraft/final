@@ -1,5 +1,17 @@
 /*mediaq*/
 @media screen and (max-width: 991px){
+    .navbar{
+        margin-bottom: 15px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+    .maintitle{
+        font-size: 60px;
+    }
+    .card1, .card2{
+        margin-top: 86px;
+    }
     .logo{
         font-family: $letra-logo;
         color: black;
@@ -38,15 +50,25 @@
         "textsobremi"
         "footer"; 
     }
+    .perfil{
+        margin-top: 86px;
+    }
     .textsobremi{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .imgsobremi{
+        margin-top: 86px;
+    }
     .box4, .box5, .box6{
         padding: 8px;
     }
-    .maintitle{
-        font-size: 60px;
+    .box1, .box4{
+        margin-top: 86px;
     }
+    #formulario{
+        margin-top: 140px;
+    }
+    
 }
 
